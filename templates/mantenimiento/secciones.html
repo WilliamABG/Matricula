@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -16,7 +16,6 @@
 <body>
 
   <header>
-
     <nav class="navbar navbar-expand-lg navbar-dark dark">
       <div class="container">
         <a class="navbar-brand" href="#">Sistema de Matricula</a>
@@ -30,9 +29,9 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Gestionar
+                Mantenimiento
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu " aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Alumnos</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Profesores</a>
@@ -45,24 +44,20 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Asignar
+                Matricula
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Alumnos a Secciones</a>
+                <a class="dropdown-item" href="#">Secciones Disponibles</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Profesores a Secciones</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Seccione a Cursos</a>
+                <a class="dropdown-item" href="#">Inscripciones</a>
               </div>
             </li>
-
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Iniciar Sesión</button>
           </form>
         </div>
       </div>
-
     </nav>
   </header>
 
@@ -73,12 +68,12 @@
         <div class="table-title">
           <div class="row">
             <div class="col-sm-6">
-              <h2>Gestionar <b>Cursos</b></h2>
+              <h2>Gestionar <b>Secciones</b></h2>
             </div>
             <div class="col-sm-6">
-              <a href="#addStudentModal" class="btn btn-success" data-toggle="modal"><i
-                  class="material-icons">&#xE147;</i> <span>Añadir Nuevo Curso</span></a>
-              <a href="#deleteStudentModal" class="btn btn-danger" data-toggle="modal"><i
+              <a href="#addSectionModal" class="btn btn-success" data-toggle="modal"><i
+                  class="material-icons">&#xE147;</i> <span>Añadir Nueva Sección</span></a>
+              <a href="#deleteSectionModal" class="btn btn-danger" data-toggle="modal"><i
                   class="material-icons">&#xE15C;</i> <span>Eliminar</span></a>
             </div>
           </div>
@@ -94,9 +89,9 @@
                   </span>
                 </th>
                 <th>Código</th>
-                <th>Nombre</th>
-                <th>Creditos</th>
-                <th>Nivel</th>
+                <th>Periodo</th>
+                <th>Profesor</th>
+                <th>Curso</th>
                 <th>Acciones</th>
               </tr>
           </thead>
@@ -108,14 +103,14 @@
                   <label for="checkbox1"></label>
                 </span>
               </td>
-              <td>MA412</td>
-              <td>Matemática Básica</td>
-              <td>6</td>
-              <td>2</td>
+              <td>VA12</td>
+              <td>2020-1</td>
+              <td>Thomas Hardy</td>
+              <td>MA320</td>
               <td>
-                <a href="#editStudentModal" class="edit" data-toggle="modal"><i class="material-icons"
+                <a href="#editSectionModal" class="edit" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                <a href="#deleteStudentModal" class="delete" data-toggle="modal"><i class="material-icons"
+                <a href="#deleteSectionModal" class="delete" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Delete">&#xE872;</i></a>
               </td>
             </tr>
@@ -126,14 +121,14 @@
                   <label for="checkbox2"></label>
                 </span>
               </td>
-              <td>MA440</td>
-              <td>Cálculo</td>
-              <td>6</td>
-              <td>4</td>
+              <td>VA40</td>
+              <td>2020-2</td>
+              <td>Vega Carlos</td>
+              <td>MA350</td>
               <td>
-                <a href="#editStudentModal" class="edit" data-toggle="modal"><i class="material-icons"
+                <a href="#editSectionModal" class="edit" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                <a href="#deleteStudentModal" class="delete" data-toggle="modal"><i class="material-icons"
+                <a href="#deleteSectionModal" class="delete" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Delete">&#xE872;</i></a>
               </td>
             </tr>
@@ -144,14 +139,14 @@
                   <label for="checkbox3"></label>
                 </span>
               </td>
-              <td>LB320</td>
-              <td>Lenguaje</td>
-              <td>4</td>
-              <td>1</td>
+              <td>SV41</td>
+              <td>2021-1</td>
+              <td>Castillo Piero</td>
+              <td>LB120</td>
               <td>
-                <a href="#editStudentModal" class="edit" data-toggle="modal"><i class="material-icons"
+                <a href="#editSectionModal" class="edit" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                <a href="#deleteStudentModal" class="delete" data-toggle="modal"><i class="material-icons"
+                <a href="#deleteSectionModal" class="delete" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Delete">&#xE872;</i></a>
               </td>
             </tr>
@@ -162,14 +157,15 @@
                   <label for="checkbox4"></label>
                 </span>
               </td>
-              <td>MA302</td>
-              <td>Programación en Web</td>
-              <td>5</td>
-              <td>7</td>
+              <td>VA52</td>
+
+              <td>2019-1</td>
+              <td>Rojas Patricia</td>
+              <td>MA500</td>
               <td>
-                <a href="#editStudentModal" class="edit" data-toggle="modal"><i class="material-icons"
+                <a href="#editSectionModal" class="edit" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                <a href="#deleteStudentModal" class="delete" data-toggle="modal"><i class="material-icons"
+                <a href="#deleteSectionModal" class="delete" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Delete">&#xE872;</i></a>
               </td>
             </tr>
@@ -180,14 +176,14 @@
                   <label for="checkbox5"></label>
                 </span>
               </td>
-              <td>TA101</td>
-              <td>Inglés Basico</td>
-              <td>3</td>
-              <td>1</td>
+              <td>VB22</td>
+              <td>2020-1</td>
+              <td>Diaz Carlos</td>
+              <td>MA320</td>
               <td>
-                <a href="#editStudentModal" class="edit" data-toggle="modal"><i class="material-icons"
+                <a href="#editSectionModal" class="edit" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                <a href="#deleteStudentModal" class="delete" data-toggle="modal"><i class="material-icons"
+                <a href="#deleteSectionModal" class="delete" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Delete">&#xE872;</i></a>
               </td>
             </tr>
@@ -209,30 +205,42 @@
     </div>
   </div>
   <!-- Add Modal HTML -->
-  <div id="addStudentModal" class="modal fade">
+  <div id="addSectionModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
         <form>
           <div class="modal-header">
-            <h4 class="modal-title">Añadir Alumno</h4>
+            <h4 class="modal-title">Añadir Sección</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">
             <div class="form-group">
-              <label>Nombre</label>
+              <label>Código</label>
               <input type="text" class="form-control" required>
             </div>
             <div class="form-group">
-              <label>Email</label>
+              <label>Periodo</label>
               <input type="email" class="form-control" required>
             </div>
             <div class="form-group">
-              <label>Direccion</label>
-              <textarea class="form-control" required></textarea>
+              <label for="sel1">Profesor:</label>
+              <select class="form-control" id="sel1">
+                <option disabled selected hidden>Elige un profesor... </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
             </div>
             <div class="form-group">
-              <label>Celular</label>
-              <input type="text" class="form-control" required>
+              <label for="sel1">Curso:</label>
+              <select class="form-control" id="sel1">
+                <option disabled selected hidden>Elige un curso... </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
             </div>
           </div>
           <div class="modal-footer">
@@ -244,30 +252,42 @@
     </div>
   </div>
   <!-- Edit Modal HTML -->
-  <div id="editStudentModal" class="modal fade">
+  <div id="editSectionModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
         <form>
           <div class="modal-header">
-            <h4 class="modal-title">Editar Alumno</h4>
+            <h4 class="modal-title">Editar Sección</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">
             <div class="form-group">
-              <label>Nombre</label>
+              <label>Código</label>
               <input type="text" class="form-control" required>
             </div>
             <div class="form-group">
-              <label>Email</label>
+              <label>Periodo</label>
               <input type="email" class="form-control" required>
             </div>
             <div class="form-group">
-              <label>Direccion</label>
-              <textarea class="form-control" required></textarea>
+              <label for="sel1">Profesor:</label>
+              <select class="form-control" id="sel1">
+                <option disabled selected hidden>Elige un profesor... </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
             </div>
             <div class="form-group">
-              <label>Celular</label>
-              <input type="text" class="form-control" required>
+              <label for="sel1">Curso:</label>
+              <select class="form-control" id="sel1">
+                <option disabled selected hidden>Elige un curso... </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
             </div>
           </div>
           <div class="modal-footer">
@@ -279,7 +299,7 @@
     </div>
   </div>
   <!-- Delete Modal HTML -->
-  <div id="deleteStudentModal" class="modal fade">
+  <div id="deleteSectionModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
         <form>

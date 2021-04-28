@@ -6,10 +6,22 @@ label {
   margin: auto !important;
 }
 
+.dropdown-menu{
+  border-radius: 10px !important;
+}
+.dropdown-menu,.dropdown-item {
+  background-color: #212121 !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.dropdown-item:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
 .table-responsive {
   margin: 100px 0;
 }
-
+.dropdown-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
 .table-wrapper {
   background-color: #fff;
   padding: 20px 25px;

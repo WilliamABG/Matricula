@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -16,7 +16,6 @@
 <body>
 
   <header>
-
     <nav class="navbar navbar-expand-lg navbar-dark dark">
       <div class="container">
         <a class="navbar-brand" href="#">Sistema de Matricula</a>
@@ -30,9 +29,9 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Gestionar
+                Mantenimiento
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu " aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Alumnos</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Profesores</a>
@@ -45,27 +44,22 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Asignar
+                Matricula
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Alumnos a Secciones</a>
+                <a class="dropdown-item" href="#">Secciones Disponibles</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Profesores a Secciones</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Seccione a Cursos</a>
+                <a class="dropdown-item" href="#">Inscripciones</a>
               </div>
             </li>
-
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Iniciar Sesión</button>
           </form>
         </div>
       </div>
-
     </nav>
   </header>
-
 
   <div class="container-xl">
     <div class="table-responsive">
@@ -73,7 +67,7 @@
         <div class="table-title">
           <div class="row">
             <div class="col-sm-6">
-              <h2>Gestionar <b>Alumnos</b></h2>
+              <h2>Inscripciones</h2>
             </div>
             <div class="col-sm-6">
               <a href="#addStudentModal" class="btn btn-success" data-toggle="modal"><i
@@ -299,7 +293,6 @@
       </div>
     </div>
   </div>
-
 
   <script src="/js/jQuery.js"></script>
   <script src="/js/Popper.js"></script>
