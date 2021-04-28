@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Matricula</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Sistema de Matricula</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Gestionar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Alumnos</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Profesores</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Secciones</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Cursos</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Asignar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Alumnos a Secciones</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Profesores a Secciones</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Seccione a Cursos</a>
+              </div>
+            </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Iniciar Sesión</button>
+          </form>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <form onsubmit="event.preventDefault()" class="box">
+            <h1>Login</h1>
+            <p class="text-muted">¡Por favor ingrese sus credenciales!</p>
+            <input type="text" name="" placeholder="Username"> <input type="password" name="" placeholder="Password">
+            <a class="forgot text-muted" href="#">¿Olvidaste tu contraseña?</a>
+            <input type="submit" name="" value="Ingresar" href="#">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/jQuery.js"></script>
+  <script src="/js/Popper.js"></script>
+  <script src="/js/bootstrap.js"></script>
+</body>
+
+</html>
