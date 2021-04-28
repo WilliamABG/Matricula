@@ -79,10 +79,6 @@ table.table tr td {
   vertical-align: middle;
 }
 
-table.table tr th:first-child {
-  width: 60px;
-}
-
 table.table tr th:last-child {
   width: 100px;
 }
@@ -126,11 +122,15 @@ table.table td a.edit {
 table.table td a.delete {
   color: #f44336;
 }
-
+table.table td a.assign {
+  color: #36f4ab;
+}
 table.table td i {
   font-size: 19px;
 }
-
+.center {
+  text-align: center;
+}
 table.table .avatar {
   border-radius: 50%;
   vertical-align: middle;

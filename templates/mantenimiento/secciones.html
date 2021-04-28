@@ -73,8 +73,6 @@
             <div class="col-sm-6">
               <a href="#addSectionModal" class="btn btn-success" data-toggle="modal"><i
                   class="material-icons">&#xE147;</i> <span>Añadir Nueva Sección</span></a>
-              <a href="#deleteSectionModal" class="btn btn-danger" data-toggle="modal"><i
-                  class="material-icons">&#xE15C;</i> <span>Eliminar</span></a>
             </div>
           </div>
         </div>
@@ -82,31 +80,23 @@
           <thead>
             <table class="table table-striped table-hover">
               <tr>
-                <th>
-                  <span class="custom-checkbox">
-                    <input type="checkbox" id="selectAll">
-                    <label for="selectAll"></label>
-                  </span>
-                </th>
+
                 <th>Código</th>
                 <th>Periodo</th>
                 <th>Profesor</th>
                 <th>Curso</th>
+                <th>Vacantes</th>
                 <th>Acciones</th>
               </tr>
           </thead>
           <tbody>
             <tr>
-              <td>
-                <span class="custom-checkbox">
-                  <input type="checkbox" id="checkbox1" name="options[]" value="1">
-                  <label for="checkbox1"></label>
-                </span>
-              </td>
+
               <td>VA12</td>
               <td>2020-1</td>
               <td>Thomas Hardy</td>
               <td>MA320</td>
+              <td>30</td>
               <td>
                 <a href="#editSectionModal" class="edit" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Edit">&#xE254;</i></a>
@@ -115,16 +105,12 @@
               </td>
             </tr>
             <tr>
-              <td>
-                <span class="custom-checkbox">
-                  <input type="checkbox" id="checkbox2" name="options[]" value="1">
-                  <label for="checkbox2"></label>
-                </span>
-              </td>
+
               <td>VA40</td>
               <td>2020-2</td>
               <td>Vega Carlos</td>
               <td>MA350</td>
+              <td>20</td>
               <td>
                 <a href="#editSectionModal" class="edit" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Edit">&#xE254;</i></a>
@@ -133,16 +119,12 @@
               </td>
             </tr>
             <tr>
-              <td>
-                <span class="custom-checkbox">
-                  <input type="checkbox" id="checkbox3" name="options[]" value="1">
-                  <label for="checkbox3"></label>
-                </span>
-              </td>
+
               <td>SV41</td>
               <td>2021-1</td>
               <td>Castillo Piero</td>
               <td>LB120</td>
+              <td>40</td>
               <td>
                 <a href="#editSectionModal" class="edit" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Edit">&#xE254;</i></a>
@@ -151,17 +133,12 @@
               </td>
             </tr>
             <tr>
-              <td>
-                <span class="custom-checkbox">
-                  <input type="checkbox" id="checkbox4" name="options[]" value="1">
-                  <label for="checkbox4"></label>
-                </span>
-              </td>
               <td>VA52</td>
 
               <td>2019-1</td>
               <td>Rojas Patricia</td>
               <td>MA500</td>
+              <td>24</td>
               <td>
                 <a href="#editSectionModal" class="edit" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Edit">&#xE254;</i></a>
@@ -170,16 +147,11 @@
               </td>
             </tr>
             <tr>
-              <td>
-                <span class="custom-checkbox">
-                  <input type="checkbox" id="checkbox5" name="options[]" value="1">
-                  <label for="checkbox5"></label>
-                </span>
-              </td>
               <td>VB22</td>
               <td>2020-1</td>
               <td>Diaz Carlos</td>
               <td>MA320</td>
+              <td>34</td>
               <td>
                 <a href="#editSectionModal" class="edit" data-toggle="modal"><i class="material-icons"
                     data-toggle="tooltip" title="Edit">&#xE254;</i></a>
@@ -225,7 +197,7 @@
             <div class="form-group">
               <label for="sel1">Profesor:</label>
               <select class="form-control" id="sel1">
-                <option disabled selected hidden>Elige un profesor... </option>
+                <option disabled selected hidden value="">Elige un profesor... </option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -233,9 +205,9 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="sel1">Curso:</label>
-              <select class="form-control" id="sel1">
-                <option disabled selected hidden>Elige un curso... </option>
+              <label for="sel2">Curso:</label>
+              <select class="form-control" id="sel2">
+                <option disabled selected hidden value="">Elige un curso... </option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -271,8 +243,8 @@
             </div>
             <div class="form-group">
               <label for="sel1">Profesor:</label>
-              <select class="form-control" id="sel1">
-                <option disabled selected hidden>Elige un profesor... </option>
+              <select class="form-control" id="sel1" required>
+                <option disabled selected hidden value="">Elige un profesor... </option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -281,8 +253,8 @@
             </div>
             <div class="form-group">
               <label for="sel1">Curso:</label>
-              <select class="form-control" id="sel1">
-                <option disabled selected hidden>Elige un curso... </option>
+              <select class="form-control" id="sel1" required>
+                <option disabled selected hidden value="">Elige un curso... </option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
